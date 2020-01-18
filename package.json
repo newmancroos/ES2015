@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d dist"
   },
-  "script" : {
+  "script": {
     "build": "babel --presets es2015 src -d dist"
   },
   "author": "",
