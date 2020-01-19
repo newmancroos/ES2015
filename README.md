@@ -138,8 +138,8 @@ Template Literals
     </pre>
 but without using + symbol we can create multiline string like below<br>
     <pre>
-        let template = `&lt;h1&gt;Hello&lt;/h1&gt;
-        &lt;p&gt;This is my first template&lt;/p&gt;`
+        let template = &#x60;&#x3C;h1&#x3E;Hello&#x3C;/h1&#x3E;
+    &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
     </pre>
 
 
