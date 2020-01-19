@@ -142,4 +142,24 @@ but without using + symbol we can create multiline string like below<br>
     &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
     </pre>
 
+* Can also use string interpolation like in C#
+ex:
+    <pre>
+    let name = &#x22;Newman Croos&#x22;;
+    let template1 = &#x60;&#x3C;h1&#x3E;Hello ${name}&#x3C;/h1&#x3E;
+    &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
+    </pre> <br>
+    
+    document.getElementById(&#x22;template&#x22;).innerHTML= template1;
+* We can also call function using string interpolation.
+ex:
+    <pre>
+        function upperCase(name)
+        {
+            return name.toUpperCase();
+        }
+        let template2 = &#x60;&#x3C;h1&#x3E;Hello ${upperCase(name)}&#x3C;/h1&#x3E;
+            &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
 
+        document.getElementById(&#x22;template&#x22;).innerHTML= template2;
+    </pre>
