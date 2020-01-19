@@ -162,14 +162,14 @@ ex:
             &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
         document.getElementById(&#x22;template&#x22;).innerHTML= template2;
     </pre>
-===================================================================================
-&lt;b&gt;String and Numbers&lt;/b&lt;br&gt;
-&lt;u&gt;String methods&lt;/u&gt;
+<hr>
+<b>String and Numbers</b><br>
+<u>String methods</u>
 * startsWith
 * endsWith
 * includes
 
-&lt;u&gt;Numbers&lt;/u&gt;
+<u>Numbers</u>
 * Hexa decimal (0xFF) = 255
 * Binary (0b101011) = 43
 * Octal (0o543) = 355
@@ -177,5 +177,6 @@ ex:
 * console.log(Number.isFinite(NaN)); //false,
 * console.log(Number.isNaN(NaN)) //true
 * console.log(Number.isInteger(23)) //true
-==================================================================================
+<hr>
+
 
