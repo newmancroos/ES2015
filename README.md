@@ -123,5 +123,23 @@ let mike = new Member('mike', 'mike@Test.com', 'test123', 'testPackage');
 mike.Register();
 mike.getPackage();
 ============================================================
+Template Literals
+------------------
+* We can create string html template and assign it to a document as html element.
+    ex : 
+    <pre>
+        "use strict"
+        let template = "<h1>Hello</h1><p>This is my first template</p>"
+        document.getElementById("template").innerHTML= template;
+    </pre>
+* For having string values in multiple line we use + symbol like below
+    <pre>let template = "&lt;h1&gt;Hello&lt;/h1&gt;" +
+    "&lt;p&gt;This is my first template&lt;/p&gt;"  
+    </pre>
+but without using + symbol we can create multiline string using "`" like below
+    <pre>
+        let template = `&lt;h1&lt;Hello&lt;/h1&lt;
+        &lt;p&lt;This is my first template&lt;/p&lt;`
+    </pre>
 
 
