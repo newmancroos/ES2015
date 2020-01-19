@@ -132,11 +132,11 @@ Template Literals
         let template = "<h1>Hello</h1><p>This is my first template</p>"
         document.getElementById("template").innerHTML= template;
     </pre>
-* For having string values in multiple line we use + symbol like below
+* For having string values in multiple line we use + symbol like below <br>
     <pre>let template = "&lt;h1&gt;Hello&lt;/h1&gt;" +
     "&lt;p&gt;This is my first template&lt;/p&gt;"  
     </pre>
-but without using + symbol we can create multiline string using "`" like below
+but without using + symbol we can create multiline string using "`" like below<br>
     <pre>
         let template = `&lt;h1&gt;Hello&lt;/h1&gt;
         &lt;p&gt;This is my first template&lt;/p&gt;`
