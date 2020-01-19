@@ -1,37 +1,19 @@
 "use strict"
-class User{
-    constructor(username, email, password)
-    {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
-    Register() {
-        console.log(this.username +" is now registered.");
-    }
-    static countUsers()
-    {
-        console.log("There are 50 users");
-    }
+let theString ="Hello, myname is Newman and OI love javascript";
 
-}
+console.log(theString.startsWith("Hello"));  //true
+console.log(theString.endsWith("love"));  //false
+console.log(theString.includes("love")); //true
 
-class Member extends User{
-    constructor(username, email, password, memberPackage)
-    {
-        super(username, email, password);
-        this.package = memberPackage;
-    }
+//Hex
+console.log(0xff); //255
+//Binary
+console.log(0b101011); //43
+//Octal
+console.log(0o543); //355
 
-    getPackage(){
-        console.log(this.username + "is subscribed to the package " + this.package);
-    }
-}
+console.log(Number.isFinite(123)); //true,
+console.log(Number.isFinite(NaN)); //false,
+console.log(Number.isNaN(NaN)) //true
+console.log(Number.isInteger(23)) //true
 
-let bob = new User('bob','test@test.com','test123');
-bob.Register();
-User.countUsers();
-
-let mike = new Member('mike', 'mike@Test.com', 'test123', 'testPackage');
-mike.Register();
-mike.getPackage();

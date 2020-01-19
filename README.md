@@ -123,5 +123,59 @@ let mike = new Member('mike', 'mike@Test.com', 'test123', 'testPackage');
 mike.Register();
 mike.getPackage();
 ============================================================
+Template Literals
+------------------
+* We can create string html template and assign it to a document as html element.
+    ex : 
+    <pre>
+        "use strict"
+        let template = "<h1>Hello</h1><p>This is my first template</p>"
+        document.getElementById("template").innerHTML= template;
+    </pre>
+* For having string values in multiple line we use + symbol like below <br>
+    <pre>let template = "&lt;h1&gt;Hello&lt;/h1&gt;" +
+    "&lt;p&gt;This is my first template&lt;/p&gt;"  
+    </pre>
+but without using + symbol we can create multiline string like below<br>
+    <pre>
+        let template = &#x60;&#x3C;h1&#x3E;Hello&#x3C;/h1&#x3E;
+    &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
+    </pre>
 
+* Can also use string interpolation like in C#
+ex:
+    <pre>
+    let name = &#x22;Newman Croos&#x22;;
+    let template1 = &#x60;&#x3C;h1&#x3E;Hello ${name}&#x3C;/h1&#x3E;
+    &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
+    document.getElementById(&#x22;template&#x22;).innerHTML= template1;
+    </pre> <br>
+
+* We can also call function using string interpolation.
+ex:
+    <pre>
+        function upperCase(name)
+        {
+            return name.toUpperCase();
+        }
+        let template2 = &#x60;&#x3C;h1&#x3E;Hello ${upperCase(name)}&#x3C;/h1&#x3E;
+            &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
+        document.getElementById(&#x22;template&#x22;).innerHTML= template2;
+    </pre>
+===================================================================================
+<b>String and Numbers</b><br>
+<u>String methods</u>
+* startsWith
+* endsWith
+* includes
+
+<u>Numbers</u>
+* Hexa decimal (0xFF) = 255
+* Binary (0b101011) = 43
+* Octal (0o543) = 355
+* console.log(Number.isFinite(123)); //true,
+* console.log(Number.isFinite(NaN)); //false,
+* console.log(Number.isNaN(NaN)) //true
+* console.log(Number.isInteger(23)) //true
+==================================================================================
 
