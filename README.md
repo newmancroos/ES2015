@@ -163,13 +163,13 @@ ex:
         document.getElementById(&#x22;template&#x22;).innerHTML= template2;
     </pre>
 ===================================================================================
-<b>String and Numbers</b><br>
-<u>String methods</u>
+&lt;b&gt;String and Numbers&lt;/b&lt;br&gt;
+&lt;u&gt;String methods&lt;/u&gt;
 * startsWith
 * endsWith
 * includes
 
-<u>Numbers</u>
+&lt;u&gt;Numbers&lt;/u&gt;
 * Hexa decimal (0xFF) = 255
 * Binary (0b101011) = 43
 * Octal (0o543) = 355
