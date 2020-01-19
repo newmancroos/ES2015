@@ -148,9 +148,9 @@ ex:
     let name = &#x22;Newman Croos&#x22;;
     let template1 = &#x60;&#x3C;h1&#x3E;Hello ${name}&#x3C;/h1&#x3E;
     &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
-    </pre> <br>
-    
     document.getElementById(&#x22;template&#x22;).innerHTML= template1;
+    </pre> <br>
+
 * We can also call function using string interpolation.
 ex:
     <pre>
@@ -160,6 +160,5 @@ ex:
         }
         let template2 = &#x60;&#x3C;h1&#x3E;Hello ${upperCase(name)}&#x3C;/h1&#x3E;
             &#x3C;p&#x3E;This is my first template&#x3C;/p&#x3E;&#x60;
-
         document.getElementById(&#x22;template&#x22;).innerHTML= template2;
     </pre>
