@@ -138,8 +138,8 @@ Template Literals
     </pre>
 but without using + symbol we can create multiline string using "`" like below
     <pre>
-        let template = `&lt;h1&lt;Hello&lt;/h1&lt;
-        &lt;p&lt;This is my first template&lt;/p&lt;`
+        let template = `&lt;h1&gt;Hello&lt;/h1&gt;
+        &lt;p&gt;This is my first template&lt;/p&gt;`
     </pre>
 
 
